@@ -1,23 +1,31 @@
 {
-  "name": "turbo-check-coverage-projects",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "my-turborepo",
+  "private": false,
   "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "coverage:check": "node ./scripts/coverage-projects.mjs --check",
     "coverage:read": "node ./scripts/coverage-projects.mjs --read",
     "coverage:write": "node ./scripts/coverage-projects.mjs --write",
-    "coverage:diff": "node ./scripts/coverage-projects.mjs --diff",
+    "coverage:diff": "node ./scripts/coverage-projects.mjs --diff"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexcastroDev/turbo-check-coverage-projects.git"
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "prettier": "^2.5.1",
+    "turbo": "latest"
   },
-  "keywords": [],
-  "author": "Alexandro castro",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/AlexcastroDev/turbo-check-coverage-projects/issues"
-  },
-  "homepage": "https://github.com/AlexcastroDev/turbo-check-coverage-projects#readme"
+  "packageManager": "yarn@1.22.19",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "author": {
+    "name": "Alexandro castro",
+    "email": "alexoliveira7x@gmail.com"
+  }
 }

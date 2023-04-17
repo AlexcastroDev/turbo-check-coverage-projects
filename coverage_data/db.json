@@ -1,0 +1,15 @@
+{
+  "main": [
+    {
+      "project_name": "ui",
+      "isPackage": true,
+      "averages": {
+        "lines": 100,
+        "branches": 100,
+        "functions": 100,
+        "statements": 100
+      },
+      "total_average": 100
+    }
+  ]
+}
