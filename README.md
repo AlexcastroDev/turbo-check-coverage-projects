@@ -28,7 +28,7 @@ Calculates the code coverage of the current branch and writes it to a JSON file.
 ## Example usage:
 
 ```bash
-npm run write
+npm run coverage:write
 ```
 
 Reads the code coverage data from the JSON file and displays it in a table.
@@ -44,7 +44,7 @@ Compares the code coverage of the current branch with that of the dev branch and
 ## Example usage:
 
 ```bash
-npm run diff
+npm run coverage:diff
 ```
 
 # Customization
