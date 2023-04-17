@@ -1,0 +1,23 @@
+{
+  "name": "turbo-check-coverage-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "coverage:check": "node ./scripts/coverage-projects.mjs --check",
+    "coverage:read": "node ./scripts/coverage-projects.mjs --read",
+    "coverage:write": "node ./scripts/coverage-projects.mjs --write",
+    "coverage:diff": "node ./scripts/coverage-projects.mjs --diff",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexcastroDev/turbo-check-coverage-projects.git"
+  },
+  "keywords": [],
+  "author": "Alexandro castro",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/AlexcastroDev/turbo-check-coverage-projects/issues"
+  },
+  "homepage": "https://github.com/AlexcastroDev/turbo-check-coverage-projects#readme"
+}
